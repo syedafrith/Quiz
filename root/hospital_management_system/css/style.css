@@ -1,0 +1,46 @@
+.box {
+  border:1px solid black;
+  width:8cm;
+  margin:auto;
+  background-color:white;
+  }
+
+.boxtitle{
+  border:1px solid green;
+  height:1cm;
+  padding:10px 80px 0px ;
+  background-color:green;
+  color:white;
+  font-size:25px;
+  }
+.success {
+  border:1px solid green;
+  width:5cm;
+  background-color:black;
+  color:white;
+  margin:auto;
+  padding:;
+  }
+
+.errorlist li {
+  border:1px solid green;
+  background-color:green;
+  color:white;
+  width:4cm;
+  }
+
+ul.errorlist{
+  margin-top:0;
+  padding:0
+  }
+
+td {
+  margin:auto;
+  }
+
+body{
+  background-color:blue;
+  }
+
+
+

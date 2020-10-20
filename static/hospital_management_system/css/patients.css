@@ -1,0 +1,490 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+body{
+ background-color:#d1e0e0;
+ display: flex;
+ flex-direction: column;
+}
+
+.main-content{
+  flex: 1 0 auto;
+}
+
+a{text-decoration:none;}
+
+table{
+  border-collapse:collapse;
+}
+
+td {
+  border: 1px solid #e0e0d1;
+  width:20%;
+  padding:10px 2px;
+}
+
+.outpatient_form input{
+ margin-top:unset;
+ border-bottom:2px solid green;
+ color:black;
+}
+
+.outpatient_form select{
+ margin-top:unset;
+ border-bottom:2px solid green;
+ color:black;
+}
+
+ input,select{
+  padding: 2px 1px;
+  width:70%;
+  display:block;
+  box-sizing: border-box;
+  border:0px solid black;
+  border-bottom:2px solid blue;
+  background-color:rgba(0,0,0,0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin:auto auto ;
+  margin-top:20px;
+  color:black;
+  outline:none;
+}
+
+
+
+::placeholder{
+  color:unset;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+label{
+  color:blue;
+  margin-top:20px;
+  margin-left:55px;
+  display:inline-block;
+}
+
+
+.submit , .submit1, .save{
+  border:unset;
+  display:block;
+  width:80%;
+  border:1px solid white;
+  border-radius:10px;
+  background-color:red;
+  padding:5px 30px;
+  margin:30px auto;
+  color:white;
+}
+
+.loader {
+  border: 5px solid black;
+  border-radius: 50%;
+  border-top: 5px solid white;
+  width: 20px;
+  height: 20px;
+  margin-left:40%;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 1.5s linear infinite;
+  display:none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.patients_form::placeholder{
+  color:white;
+}
+
+#search_input::placeholder{
+  color:unset;
+}
+
+
+
+h5{color:red;}
+
+.header{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  border: 1px solid black;
+  padding:15px 0 15px 0;
+  margin-top:0;
+  background-color:white;
+  height:2cm;
+}
+
+.logo{
+  float:left;
+  background: url("/static/hospital_management_system/images/stethoscope icon.jpg")  no-repeat fixed ;
+  background-size:50px;
+  background-position:10px 13px;
+}
+
+.logo h3{
+  margin-left:1.5cm;
+  margin-top:-0.1cm;
+  font-family:Arbutus;
+  color:red;
+}
+
+.logo h5{
+  margin-left:2.5cm;
+  margin-top:-0.5cm;
+  font-style:italic;
+  color:black;
+ }
+
+.search_bar{
+ border:1px solid blue;
+ display:inline;
+ max-width:40%;
+ min-width:45%;
+ float:left;
+ margin-left:100px;
+ height:50px;
+}
+
+.search_bar i{
+ float:left;
+ margin-top:10px;
+ margin-left:5px;
+}
+
+.search_bar:focus-within{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#search_input{
+  float:left;
+  font-size:15px;
+  background-color:unset;
+  color:black;
+  margin-top:10px;
+  margin-left:25px;
+  border:unset;
+}
+
+.navbar{
+  height: 80%;
+  width:260px;
+  position: fixed;
+  z-index: 1;
+  top: 3cm;
+  left:0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.navbar a{
+  margin-left:5%;
+  margin-top:10px;
+  border:1px solid black;
+  background-color:white;
+  border-radius:30px;
+  width:230px;
+  padding:10px 20px;
+  float:left;
+}
+
+.navbar a:active{
+ border:2px solid red;
+}
+
+#add_icon , #search_icon{
+  float:right;
+  display:none;
+  margin-top:5px;
+  right:20px;
+  position:fixed;
+}
+
+#search_icon{
+  right:70px;
+}
+
+.search_return{
+  display:none;
+  float:left;
+}
+
+
+.profile_container{
+ border:1px solid black;
+ border-radius:15px;
+ float:right;
+ margin-right:10px;
+ padding:5px 5px;
+}
+
+.logout{
+ border:1px solid black;
+ background-color:#66ffcc;
+ padding:3px 3px;
+ display:none;
+ text-align:center;
+ margin-top:5px;
+ width:100px;
+}
+
+.profile_container:hover .logout{
+ display:block;
+ position:absolute;
+}
+
+.no_of_patients{
+  border:0.5px solid white;
+  background-color:blue;
+  color:white;
+  border-radius:10px;
+  margin-top:0px;
+  padding:5px;
+  position:fixed;
+}
+
+
+.search_container{
+  background-color:white;
+  max-width:500px;
+  min-width:100px;
+  border-radius:10px;
+  height:2.5cm;
+  margin-left:25%;
+  padding:0px 20px;
+  display:none;
+}
+
+.search_container a:not(.p_profile){
+ border:1px solid white;
+ padding:0px 15px;
+}
+
+.search_container a:hover{
+ color:blue;
+}
+
+
+.outpatient_form{
+ border:1px solid black;
+ height:13cm;
+ width:10cm;
+ background-color:white;
+ top:3cm;
+ display:none;
+ margin-left:30%;
+ outline:none;
+}
+
+.patient_list{
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  line-height: 5px;
+  background-color:white;
+  max-width:500px;
+  min-width:100px;
+  border-radius:10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height:2.5cm;
+  margin-top:10px;
+  margin-left:25%;
+  padding-left:20px;
+}
+
+
+
+.patient_list > .link{
+  line-height:30px;
+  flex-direction:row;
+}
+
+.patient_list a:not(.p_profile){
+  border:1px solid white;
+  padding:0px 15px;
+}
+
+.patient_list a:not(.p_profile):hover{
+  color:blue;
+}
+
+.patients_form{
+ border:1px solid black;
+ right:1cm;
+ height:11cm;
+ width:10cm;
+ background-color:white;
+ position:fixed;
+ top:3cm;
+ display:block;
+ box-shadow: 5px 10px;
+}
+
+.patient_profile{
+ border:1px solid white;
+ background-color:white;
+ width:60%;
+ margin:auto;
+ height:80%;
+}
+
+.patient_profile table,td,tr{
+ border:1px solid  #e0e0d1 ;
+ margin:auto;
+ background-color:white;
+}
+
+.patient_profile td{
+ font-style:italic;
+ width:300px;
+ text-align:center;
+ padding:15px;
+}
+
+.visit_history{
+  border:1px solid black;
+  display:block;
+  color:white;
+  background-color:MediumSeaGreen;
+  width:60%;
+  border-radius:10px;
+  height:auto;
+  margin-top:100px;
+  margin:auto auto;
+  padding:0px 5px 10px 10px;
+}
+
+.visit_container{
+  display:none;
+  border:1px solid black;
+  top:100px;
+  background-color:white;
+  color:black;
+}
+
+.back{
+  border:1px solid black;
+  background-color:blue;
+  color:white;
+  margin:auto;
+  width:5cm;
+  display:block;
+}
+
+.back a{ text-decoration:none;}
+
+.footer{
+  flex-shrink: 0;
+  bottom:0;
+  right: 0;
+  left: 0;
+  height:50px;
+  padding:0.5cm;
+  background-color: black;
+  text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+
+ #add_icon,#search_icon{
+  display:block;
+ }
+
+ .patients_form{
+  height:13cm;
+  width:80%;
+ }
+
+
+ .patient_list{
+  margin:auto;
+  margin-top:10px;
+ }
+
+ .patient_list a:not(.p_profile){
+  border:1px solid white;
+  padding:0px 8px;
+}
+
+ .search_bar{
+ border:1px solid blue;
+ display:none;
+ border-radius:12px;
+ max-width:40%;
+ min-width:80%;
+ float:right;
+ height:50px;
+ margin-top:-40px;
+}
+
+.search_container{
+ margin-left:unset;
+}
+
+
+.visit_history{
+ width:85%;
+}
+
+ .patient_profile{
+  width:100%;
+ }
+
+ .outpatient_form{
+ margin-left:unset;
+ margin:auto;
+ }
+
+ .patients_form{
+  display:none;
+ }
+
+ .profile_container{
+  display:none;
+ }
+
+ .navbar{
+  height:50px;
+  width:100%;
+  z-index: unset;
+  top:unset;
+  position:block;
+  overflow-x:scroll;
+  white-space:nowrap;
+  overflow-y:hidden;
+  padding-top: unset;
+  padding-top:5px;
+  padding-left:3px;
+  bottom:0;
+  background-color:black;
+}
+
+  .navbar a{
+  margin-left:unset;
+  margin-top:unset;
+  border:unset;
+  background-color:white;
+  border-radius:30px;
+  width:200px;
+  padding:10px 10px;
+  float:unset;
+  }
+}

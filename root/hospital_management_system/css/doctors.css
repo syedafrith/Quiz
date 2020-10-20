@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+ background-color:#d1e0e0;
+ display: flex;
+ flex-direction: column;
+}
+
+.main-content{
+  flex: 1 0 auto;
+}
+
+
+h2{color:red;}
+a{text-decoration:none;}
+
+
+
+input,select{
+  padding: 2px 1px;
+  width:70%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left:80px;
+  outline:none;
+  width:80%;
+  border:1px solid #9900ff;
+  padding:10px;
+}
+
+ label {
+  color:#ff6600;
+  margin-left:80px;
+  font-weight:bold;
+ }
+
+
+.header{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  border: 1px solid black;
+  padding:15px 0 15px 0;
+  margin-top:0;
+  background-color:white;
+  height:2cm;
+}
+
+.logo{
+  float:left;
+  background: url("/static/hospital_management_system/images/stethoscope icon.jpg")  no-repeat fixed ;
+  background-size:50px;
+  background-position:10px 13px;
+}
+
+.logo h3{
+  margin-left:1.5cm;
+  margin-top:-0.1cm;
+  font-family:Arbutus;
+  color:red;
+}
+
+.logo h5{
+  margin-left:2.5cm;
+  margin-top:-0.5cm;
+  font-style:italic;
+ }
+
+.search_bar{
+ border:1px solid blue;
+ display:inline;
+ border-radius:12px;
+ max-width:40%;
+ min-width:45%;
+ float:left;
+ margin-left:200px;
+ height:50px;
+}
+
+.search_bar i{
+ float:left;
+ margin-top:10px;
+ margin-left:5px;
+}
+
+
+#search_input{
+  float:left;
+  width:70%;
+  font-size:15px;
+  background-color:unset;
+  color:black;
+  border:unset;
+  margin-top:;
+  margin-left:30px;
+  outline:unset;
+}
+
+.profile_container{
+ border:1px solid black;
+ border-radius:15px;
+ float:right;
+ margin-right:10px;
+ padding:5px 5px;
+}
+
+.logout{
+ border:1px solid black;
+ background-color:#66ffcc;
+ padding:3px 3px;
+ display:none;
+ text-align:center;
+ margin-top:5px;
+}
+
+.profile_container:hover .logout{
+ display:block;
+}
+
+
+.navbar{
+  height: 80%;
+  width:260px;
+  position: fixed;
+  z-index: 1;
+  top: 3cm;
+  left:-2px;
+  overflow-x: hidden; /* Disable horizontal scroll*/
+  padding-top: 20px;
+}
+
+
+.navbar a{
+  margin-left:5%;
+  margin-top:10px;
+  border:1px solid black;
+  background-color:white;
+  border-radius:30px;
+  width:230px;
+  padding:10px 20px;
+  float:left;
+}
+
+.navbar .current{
+ border:2px solid red;
+}
+
+
+
+.left_container{
+  transition: 0.3s;
+  border:1px solid black;
+  background-color:white;
+  width:0px;
+  height:10cm;
+  overflow:auto;
+  margin-top:2cm;
+  float:left;
+  display:none;
+  }
+
+.doctors_profile{
+  border:1px solid black;
+  width:24%;
+  margin:auto;
+  height:auto;
+  background-color:black;
+  color:white;
+  float:right;
+  display:none;
+}
+
+
+
+div.card {
+  border: 1px solid #ccc;
+  background-color:#5cdb95;
+  width: 100%;
+  margin-top:1cm;
+}
+
+div.card:hover {
+  border: 1px solid #777;
+  background-color:white;
+}
+
+div.card img {
+  margin:auto;
+  width: 50%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color:black;
+}
+
+div.add_doctors{
+  border:1px solid black;
+  width:50%;
+  background-color:white;
+  margin-top:30px;
+  margin:auto;
+  height:auto;
+  padding:10px;
+  display:none;
+}
+  
+.add_doctors {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+.close{
+  float:right;
+}
+
+#submit{
+  background-color:green;
+  color:white;
+  display:block;
+  text-align:center;
+}
+
+
+.no_of_doctors{
+  border:0.5px solid white;
+  background-color:blue;
+  color:white;
+  border-radius:10px;
+  margin-top:0;
+  top:2cm;
+  padding:5px;
+}
+
+.doctors_list_inner_container{
+  flex-direction:column;
+  align-content: center;
+  border:1px solid black;
+  border-radius:0px 15px 15px 0px;
+  width:50%;
+  background-color:white;
+  height:130px;
+  color:black;
+  margin:auto;
+}
+
+.container_details{
+  margin-top:-3.6cm;
+  margin-left:150px;
+}
+
+button,.edit,.delete {
+  border:1px solid #5cdb95;
+  border-radius:10px;
+  background-color:#5cdb95;
+  color:white;
+  padding:4px;
+}
+
+
+
+.doctor_list_button{
+  border:1px solid red;
+  border-radius:10px;
+  background-color:red;
+  padding:5px;
+  color:white;
+  float:left;
+  margin-top:5px;
+  margin-left:100px;
+}
+
+
+.back{
+  border:1px solid black;
+  background-color:blue;
+  color:white;
+  margin-left:38%;
+  width:5cm;
+}
+
+.footer{
+  flex-shrink: 0;
+  right: 0;
+  left: 0;
+  height:50px;
+  padding:0.5cm;
+  background-color: black;
+  text-align: center;
+}
+
+
+ /* for mobile screen */
+@media only screen and (max-width: 600px) {
+ .navbar{
+  height:auto;
+  width:auto;
+  z-index: unset;
+  top:unset;
+  overflow-x:unset; /* Disable horizontal scroll */
+  padding-top: unset;
+  bottom:0;
+}
+
+  .navbar a{
+  margin-left:unset;
+  margin-top:unset;
+  border:unset;
+  background-color:white;
+  border-radius:30px;
+  width:200px;
+  padding:10px 20px;
+  float:unset;
+  }
+
+}
+
+
+
+
+
+
+
+

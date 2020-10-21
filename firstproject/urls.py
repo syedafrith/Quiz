@@ -23,7 +23,7 @@ from quiz import views as quiz_views
 app_name = 'quiz'
 urlpatterns = [
               path('admin/', admin.site.urls),
-              path('quizlogin/',quiz_views.quiz_login),
+              path('',quiz_views.quiz_login),
               path('quiztopics/',quiz_views.quiz_topics_page),
               path('quiz/<str:topic>/',quiz_views.main_page),
               path('checkanswer',quiz_views.answer_check),
